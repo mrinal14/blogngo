@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="poststyles.css">
+</head>
+<body>
+    <div class="post-container">
+        <h2>Create a Post</h2>
+        <form action="post.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="caption" placeholder="Caption" required>
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+</body>
+</html>
